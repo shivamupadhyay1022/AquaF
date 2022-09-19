@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.1455" />
+        <entry key="app/src/main/res/drawable/ic_baseline_perm_data_setting_24.xml" value="0.132" />
         <entry key="app/src/main/res/drawable/ic_wave.xml" value="0.172" />
         <entry key="app/src/main/res/drawable/ic_wave2.xml" value="0.172" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.11927083333333334" />
