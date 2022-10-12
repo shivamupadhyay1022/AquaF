@@ -12,6 +12,10 @@
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="94sp"
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp"
+        android:paddingBottom="52sp"
         android:layout_centerInParent="true">
 
     </FrameLayout>

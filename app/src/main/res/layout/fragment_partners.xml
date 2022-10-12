@@ -1,14 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.PartnersFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="partners" />
+        android:orientation="vertical">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ETP/STP"
+            android:textSize="22sp"
+            android:layout_marginBottom="10sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sudha Dairy, Patna (Bihar)- ETP - 400 KLD"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sudha Dairy, Hajipur (Bihar) - ETP- 150 KLD"
+            android:textSize="17sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meghana Dairy, Kolkata- ETP Bioaugmentation"
+            android:textSize="17sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="India Gate- STP-100 KLD"
+            android:textSize="17sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DDA Pocket 1 A- 1 MLD STP"
+            android:textSize="17sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MANESAR Dairy, Gurgaon- 100 KLD"
+            android:textSize="17sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coke Dasna, U.P. - ETP - Bioaugmentation"
+            android:textSize="17sp" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RO Plant"
+            android:layout_marginBottom="10sp"
+            android:layout_marginTop="20sp"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aquafresh, Gurgaon - RO PLANT - 1,000 LPH and 5,000 LPH"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BPS University, Sonipat - RO Plant - 5,000 LPH"
+            android:textSize="17sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EIH Ltd, Gurgaon- RO Plant- 1000 LPH"
+            android:textSize="17sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Life Line Aqua, Bihar - RO Plant - 500 LPH"
+            android:textSize="17sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mapple Hotel, New Delhi - Retrofitting, WTP and RO Plant - 1,000 LPH"
+            android:textSize="17sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Padmavati Agrico India (P) Ltd, Ajmer - RO Plant - 3,000 LPH"
+            android:textSize="17sp" />
+
+
+
+
+    </LinearLayout>
+</ScrollView>

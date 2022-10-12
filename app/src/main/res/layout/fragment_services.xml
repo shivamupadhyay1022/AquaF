@@ -1,14 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.ServicesFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginBottom="10sp"
+        android:text="1 to 10 KLD STP Plants" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"
+        android:text="There are a variety of options for One to Ten KLD STP plants. These systems include a primary sand filter, multi-grade sand filter, and MBBR media. MBBR treatment plants may also contain a chlorine dosing system, a sludge recirculation pump, and a filter press" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginBottom="10sp"
+        android:text="10 to 50 KLD STP Plants" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"
+        android:text="There are many benefits of installing a 10 KLD TO 50KLD STP plant. It is designed to reduce the sewage volume, and it helps control power consumption by the STP. STPs are also more reliable than conventional septic systems, and they require less maintenance. " />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginBottom="10sp"
+        android:text="50 to 100 KLD STP Plants" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"
+        android:text="STP plants have become one of the most important elements of residential development, and they provide a safe environment for residents and are the preferred treatment method. The new technology for STPs is a highly efficient, and it can treat 50 to 100 KLD of sewage. " />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginBottom="10sp"
+        android:text="100 to 500 KLD STP Plants" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="16sp"
+        android:text="There are many STP plants, including MBBR, SBR, Activated sludge, and MBR. Whether you want to treat wastewater for reuse or release it back into the environment, there is a sewage treatment plant that is right for you. Contact us to know more about these types of plants. And don't forget to ask your local wastewater company about their STP plants." />
 
-</FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_marginBottom="10sp"
+            android:text="1000 KLD And More STP Plants" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginBottom="16sp"
+            android:text="The STP process has evolved to include both biological and chemical processes. This process is the most efficient treatment method, ensuring that it is free of contaminants and safe for consumption. They are more affordable and environmentally friendly. Here are some of the benefits of 1000 And More KLD STP Plants.." />
+
+
+    </LinearLayout>
+</ScrollView>

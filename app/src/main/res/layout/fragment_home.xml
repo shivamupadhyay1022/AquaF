@@ -13,6 +13,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="home" />
+        android:textSize="18sp"
+        android:text="AR Aquaformatics as one of the quality leader dedicated in water and waste water system and services provider, backed by In-house engineering and Biotechnology of Rotech Biotechnology. With the most extensive range of technologies, products and services within a single company, we provide solutions to “Total water Management and resource recovery needs" />
 
 </FrameLayout>

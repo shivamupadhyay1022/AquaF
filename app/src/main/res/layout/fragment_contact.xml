@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ContactFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25sp"
+            android:text="Aqua Formatics: "
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18sp"
+            android:text="Phone Number :-"
+            android:textAlignment="center"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/frag_contact_pn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8sp"
+            android:clickable="true"
+            android:text="+919911498738"
+            android:textColor="@color/purple_500"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/frag_contact_pn2"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_500"
+            android:layout_marginBottom="8sp"
+            android:text="+917982361289"
+            android:clickable="true"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+</ScrollView>
