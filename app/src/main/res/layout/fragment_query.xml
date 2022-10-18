@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.QueryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="100sp"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_baseline_alternate_email_24">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textAlignment="center" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="40sp"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+            <EditText
+                android:id="@+id/login_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:hint="Name"
+                android:textAlignment="center" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_branch"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50sp"
+            android:layout_marginTop="40sp"
+            android:hint="Branch">
+
+            <AutoCompleteTextView
+                android:id="@+id/select_branch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="none"
+                android:text="--Select Branch--"
+                android:textAlignment="center" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_branch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60sp"
+            android:layout_marginTop="40sp"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_baseline_info_24">
+
+            <EditText
+                android:id="@+id/login_query"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:hint="Query"
+                android:textAlignment="center" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_query1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_query"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80sp"
+            android:layout_marginTop="40dp"
+            android:text="Send Query" />
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -25,6 +25,7 @@ import com.su.aquaf.ui.AboutFragment;
 import com.su.aquaf.ui.ContactFragment;
 import com.su.aquaf.ui.HomeFragment;
 import com.su.aquaf.ui.PartnersFragment;
+import com.su.aquaf.ui.QueryFragment;
 import com.su.aquaf.ui.ServicesFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -67,10 +68,10 @@ public class MainActivity extends AppCompatActivity {
                                 openfragment(contactfragment);
                                 tv4.setText("Contact us");
                                 break;
-                            case R.id.nav_About:
+                            case R.id.nav_query:
 //                                Toast.makeText(MainActivity.this, "Clicked on Contact", Toast.LENGTH_SHORT).show();
-                                Fragment aboutfragment = new AboutFragment();
-                                openfragment(aboutfragment);
+                                Fragment queryfragment = new QueryFragment();
+                                openfragment(queryfragment);
                                 tv4.setText("About Us");
                                 break;
                         }
