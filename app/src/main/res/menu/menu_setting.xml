@@ -7,8 +7,8 @@
         android:title="Contact Us" />
 
     <item
-        android:id="@+id/nav_About"
+        android:id="@+id/nav_query"
         android:icon="@drawable/ic_baseline_info_24"
-        android:title="About us" />
+        android:title="Query" />
 
 </menu>

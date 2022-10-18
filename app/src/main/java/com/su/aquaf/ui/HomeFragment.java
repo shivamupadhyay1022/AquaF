@@ -1,14 +1,21 @@
 package com.su.aquaf.ui;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.fragment.app.Fragment;
+
 import com.su.aquaf.R;
+
+import java.util.HashMap;
+
+import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
+import com.smarteist.autoimageslider.SliderAnimations;
+import com.smarteist.autoimageslider.SliderView;
+import com.su.aquaf.SliderAdapter;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +23,15 @@ import com.su.aquaf.R;
  * create an instance of this fragment.
  */
 public class HomeFragment extends Fragment {
+
+
+    HashMap<String, Integer> HashMapForLocalRes ;
+
+    SliderView sliderView;
+    int[] images = {R.drawable.download,
+            R.drawable.water_pool_clean_machine_de_waste_640387_pxhere_com,
+            R.drawable.water_purification_plant_near_kadi,
+            R.drawable.water_treatment_plant_at_deccan,};
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -57,10 +73,63 @@ public class HomeFragment extends Fragment {
         }
     }
 
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View v = inflater.inflate(R.layout.fragment_home, container, false);
+
+        sliderView = v.findViewById(R.id.image_slider);
+
+        SliderAdapter sliderAdapter = new SliderAdapter(images);
+
+        sliderView.setSliderAdapter(sliderAdapter);
+        sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM);
+        sliderView.setSliderTransformAnimation(SliderAnimations.DEPTHTRANSFORMATION);
+        sliderView.startAutoCycle();
+
+//        sliderLayout = (SliderLayout)v.findViewById(R.id.slider_item.xml);
+//        AddImageUrlFormLocalRes();
+//        for(String name : HashMapForLocalRes.keySet()){
+//
+//            TextSliderView textSliderView = new TextSliderView(getContext());
+//
+//            textSliderView
+//                    .description(name)
+//                    .image(HashMapForLocalRes.get(name))
+//                    .setScaleType(BaseSliderView.ScaleType.Fit)
+//                    .setOnSliderClickListener((BaseSliderView.OnSliderClickListener) getActivity());
+//
+//            textSliderView.bundle(new Bundle());
+//
+//            textSliderView.getBundle()
+//                    .putString("extra",name);
+//
+//            sliderLayout.addSlider(textSliderView);
+//        }
+//        sliderLayout.setPresetTransformer(SliderLayout.Transformer.DepthPage);
+//
+//        sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
+//
+//        sliderLayout.setCustomAnimation(new DescriptionAnimation());
+//
+//        sliderLayout.setDuration(3000);
+//
+//        sliderLayout.addOnPageChangeListener((ViewPagerEx.OnPageChangeListener) getContext());
+
+        
+        return v;
+
+    }
+
+    public void AddImageUrlFormLocalRes(){
+
+        HashMapForLocalRes = new HashMap<String, Integer>();
+
+        HashMapForLocalRes.put("CupCake", R.drawable.logo);
+        HashMapForLocalRes.put("Donut", R.drawable.ic_wave2);
+
+
     }
 }

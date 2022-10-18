@@ -44,9 +44,28 @@
             android:id="@+id/frag_contact_pn2"
             android:layout_height="wrap_content"
             android:textColor="@color/purple_500"
-            android:layout_marginBottom="8sp"
+            android:layout_marginBottom="20sp"
             android:text="+917982361289"
             android:clickable="true"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18sp"
+            android:text="Email :-"
+            android:textAlignment="center"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/frag_contact_em1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8sp"
+            android:clickable="true"
+            android:text="araquaformatics@gmail.com"
+            android:textColor="@color/purple_500"
             android:textAlignment="center"
             android:textSize="17sp" />
 

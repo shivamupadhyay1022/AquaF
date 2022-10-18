@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -10,10 +11,40 @@
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="match_parent"-->
 <!--        android:src="@drawable/ic_wave"/>-->
+<!--    <com.daimajia.slider_item.xml.library.SliderLayout-->
+<!--        android:id="@+id/slider_item.xml"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="300sp"-->
+<!--        android:layout_marginBottom="60sp"/>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:sliderAnimationDuration="800"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="800"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        android:layout_marginTop="32sp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="4"
+        app:sliderStartAutoCycle="true"/>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_marginTop="32sp"
+        android:layout_height="290sp"
         android:textSize="18sp"
-        android:text="AR Aquaformatics as one of the quality leader dedicated in water and waste water system and services provider, backed by In-house engineering and Biotechnology of Rotech Biotechnology. With the most extensive range of technologies, products and services within a single company, we provide solutions to “Total water Management and resource recovery needs" />
+        android:layout_below="@+id/image_slider"
+        android:text="AR Aquaformatics as one of the quality leader dedicated in water and waste water system and services provider, backed by In-house engineering and Biotechnology of Rotech Biotechnology. With the most extensive range of technologies, products and services within a single company, we provide solutions to “Total water Management and resource recovery needs." />
+    </RelativeLayout>
 
-</FrameLayout>
+</ScrollView>

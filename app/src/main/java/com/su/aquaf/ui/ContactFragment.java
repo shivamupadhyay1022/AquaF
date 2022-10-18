@@ -70,9 +70,9 @@ public class ContactFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_contact, container, false);
 
         TextView pn1 = view.findViewById(R.id.frag_contact_pn1);
-        SpannableString content = new SpannableString("+919911498738");
-        content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
-        pn1.setText(content);
+        SpannableString content1 = new SpannableString("+919911498738");
+        content1.setSpan(new UnderlineSpan(), 0, content1.length(), 0);
+        pn1.setText(content1);
         pn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -83,14 +83,28 @@ public class ContactFragment extends Fragment {
         });
         TextView pn2 = (TextView) view.findViewById(R.id.frag_contact_pn2);
         SpannableString content2 = new SpannableString("+917982361289");
-        content.setSpan(new UnderlineSpan(), 0, content2.length(), 0);
-        pn1.setText(content2);
-        pn1.setOnClickListener(new View.OnClickListener() {
+        content2.setSpan(new UnderlineSpan(), 0, content2.length(), 0);
+        pn2.setText(content2);
+        pn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent2 = new Intent(Intent.ACTION_DIAL);
                 intent2.setData(Uri.parse("tel:+917982361289"));
                 startActivity(intent2);
+            }
+        });
+
+        TextView em1 = (TextView) view.findViewById(R.id.frag_contact_em1);
+        SpannableString content3 = new SpannableString("araquaformatics@gmail.com");
+        content3.setSpan(new UnderlineSpan(), 0, content3.length(), 0);
+        em1.setText(content3);
+        em1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent (Intent.ACTION_VIEW , Uri.parse("mailto:" + "araquaformatics@gmail.com"));
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Information");
+                intent.putExtra(Intent.EXTRA_TEXT, "your_text");
+                startActivity(intent);
             }
         });
 
